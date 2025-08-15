@@ -1,3 +1,6 @@
 {
-  "item.forgeproject.rpg": "RPG"
+  "item.forgeproject.rpg": "RPG",
+  "item.forgeproject.rpg_ammo" : "RPG Ammo",
+  "item.forgeproject.sulfur_ore": "Sulfur Ore",
+  "creativetab.custom_weapon_tab" : "Custom Weapons"
 }

@@ -14,8 +14,13 @@ public class ModItems {
     public static final RegistryObject<Item> RPG =
             ITEMS.register("rpg", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> RPG_AMMO =
+            ITEMS.register("rpg_ammo", () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
+
         ITEMS.register(eventBus);
+
     }
 
 }

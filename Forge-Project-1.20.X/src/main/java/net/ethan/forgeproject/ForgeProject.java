@@ -15,11 +15,11 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import net.ethan.forgeproject.moditems.ModCreativeModTabs;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ForgeProject.MOD_ID)
-public class ForgeProject
-{
+public class ForgeProject {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "forgeproject";
     // Directly reference a slf4j logger
@@ -27,6 +27,8 @@ public class ForgeProject
 
     public ForgeProject(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
 
@@ -47,6 +49,7 @@ public class ForgeProject
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.RPG);
+            event.accept(ModItems.RPG_AMMO);
         }
     }
 
