@@ -1,6 +1,7 @@
 package net.ethan.forgeproject.moditems;
 
 import net.ethan.forgeproject.ForgeProject;
+import net.ethan.forgeproject.modblocks.ModBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +21,7 @@ public class ModCreativeModTabs {
                             .displayItems((pParameters, pOutput) -> {
                                 pOutput.accept(ModItems.RPG.get());
                                 pOutput.accept(ModItems.RPG_AMMO.get());
+                                pOutput.accept(ModBlock.SULFUR_ORE.get());
                             })
                             .build());
 

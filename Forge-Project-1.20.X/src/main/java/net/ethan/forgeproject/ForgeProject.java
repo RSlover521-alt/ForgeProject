@@ -1,6 +1,7 @@
 package net.ethan.forgeproject;
 
 import com.mojang.logging.LogUtils;
+import net.ethan.forgeproject.modblocks.ModBlock;
 import net.ethan.forgeproject.moditems.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -31,6 +32,8 @@ public class ForgeProject {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlock.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
