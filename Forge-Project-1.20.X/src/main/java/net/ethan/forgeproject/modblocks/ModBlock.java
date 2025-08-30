@@ -23,7 +23,10 @@ public class ModBlock {
 
     public static final RegistryObject<Block> SULFUR_ORE =
             registerBlock("sulfur_ore",
-                    () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).sound(SoundType.STONE)));
+                    () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)
+                            .sound(SoundType.STONE)
+                            .requiresCorrectToolForDrops()));
+
 
     public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

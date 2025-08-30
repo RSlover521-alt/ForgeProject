@@ -1,7 +1,7 @@
 package net.ethan.forgeproject.moditems;
 
 import net.ethan.forgeproject.ForgeProject;
-import net.ethan.forgeproject.modblocks.ModBlock;
+import net.ethan.forgeproject.modblocks.*;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.registries.DeferredRegister;
