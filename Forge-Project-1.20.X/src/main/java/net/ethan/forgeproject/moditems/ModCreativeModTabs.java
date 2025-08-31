@@ -21,6 +21,9 @@ public class ModCreativeModTabs {
                             .displayItems((pParameters, pOutput) -> {
                                 pOutput.accept(ModItems.RPG.get());
                                 pOutput.accept(ModItems.RPG_AMMO.get());
+                                pOutput.accept(ModItems.RAW_SULFUR.get());
+                                pOutput.accept(ModItems.SULFUR_INGOT.get());
+
                                 pOutput.accept(ModBlock.SULFUR_ORE.get());
                             })
                             .build());

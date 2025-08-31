@@ -1,6 +1,8 @@
 {
   "item.forgeproject.rpg": "RPG",
   "item.forgeproject.rpg_ammo" : "RPG Ammo",
+  "item.forgeproject.raw_sulfur" : "Raw Sulfur",
+  "item.forgeproject.sulfur_ingot" : "Sulfur Ingot",
 
   "block.forgeproject.sulfur_ore": "Sulfur Ore",
 

@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " D ",
-    "IGI",
+    " I ",
+    "ISI",
     "IGI"
   ],
   "key": {
@@ -13,8 +13,8 @@
     "G": {
       "item": "minecraft:gunpowder"
     },
-    "D": {
-      "item": "minecraft:diamond"
+    "S": {
+      "item": "forgeproject:sulfur_ingot"
     }
   },
   "result": {

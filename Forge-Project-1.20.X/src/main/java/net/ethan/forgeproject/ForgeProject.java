@@ -1,7 +1,7 @@
 package net.ethan.forgeproject;
 
 import com.mojang.logging.LogUtils;
-import net.ethan.forgeproject.modblocks.ModBlock;
+import net.ethan.forgeproject.modblocks.*;
 import net.ethan.forgeproject.moditems.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -53,6 +53,11 @@ public class ForgeProject {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
             event.accept(ModItems.RPG);
             event.accept(ModItems.RPG_AMMO);
+        } else if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.RAW_SULFUR);
+            event.accept(ModItems.SULFUR_INGOT);
+        } else if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlock.SULFUR_ORE);
         }
     }
 
