@@ -1,0 +1,24 @@
+git_tests_alignment.patch
+disable-autospawn.patch
+
+# Ubuntu specific config/fixes
+0001-volume-config-changes.patch
+0016-nodisplay-autostart.patch
+0030-load-module-switch-on-connect.patch
+fix-stream-time-when-stream-starts-paused.patch
+fix-time-calculation-by-comparing-timestamps.patch
+
+# Ubuntu Snap policy support
+0406-tagstruct-add-copy-method.patch
+0407-access-Add-access-control-hooks.patch
+0408-protocol-native-add-access-checks.patch
+0409-fix-arg-parsing-after-async-hook.patch
+0410-pa-client-peer-apparmor-label.patch
+0700-modules-add-snappy-policy-module.patch
+0701-enable-snap-policy-module.patch
+0702-add-snappy-policy-module.patch
+0016-check_off_profile_when_switching_profile.patch
+0001-card-restore-setting-preferred-ports-in-entry_from_c.patch
+0015-bluetooth-Amend-writeout-to-send-more-initial-frames.patch
+0001-backend-native-Handle-multi-AT-commands-in-a-buffer.patch
+no-more-libpulsedsp.patch

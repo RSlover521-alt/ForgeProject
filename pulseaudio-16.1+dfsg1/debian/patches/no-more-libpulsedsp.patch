@@ -1,0 +1,23 @@
+Description: disable the libpulsedsp DSO and padsp wrapper
+ The libpulsedsp DSO is not compatible with 64-bit time_t, and is a wrapper
+ for compatibility with an API that's basically obsolete for 15 years.
+ And nowadays pulseaudio itself is largely superseded by pipewire.  Disable
+ this DSO entirely on all archs, rather than fiddle with trying to port it
+ to 64-bit time_t.
+Author: Steve Langasek <steve.langasek@canonical.com>
+Last-Update: 2024-03-11
+Forwarded: not-needed
+Index: pulseaudio-16.1+dfsg1/meson.build
+===================================================================
+--- pulseaudio-16.1+dfsg1.orig/meson.build
++++ pulseaudio-16.1+dfsg1/meson.build
+@@ -617,9 +617,6 @@
+ if cc.has_header('sys/soundcard.h', required: get_option('oss-output'))
+   # OSS output via daemon module-detect
+   cdata.set('HAVE_OSS_OUTPUT', 1)
+-  # OSS wrapper
+-  cdata.set('HAVE_OSS_WRAPPER', 1)
+-  cdata.set('PULSEDSP_LOCATION', pulsedsp_location)
+ endif
+ 
+ fftw_dep = dependency('fftw3f', required : get_option('fftw'))
